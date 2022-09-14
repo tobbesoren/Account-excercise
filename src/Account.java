@@ -7,18 +7,18 @@ public class Account {
 
     public Account() {
         this.balance = 0;
-        this.count ++;
+        count ++;
     }
 
     public Account(double balance) {
         this.balance = (int)(balance * 100);
-        this.count ++;
+        count ++;
     }
 
     public Account(String name, double balance) {
         this.name = name;
         this.balance = (int)(balance * 100);
-        this.count ++;
+        count ++;
     }
 
     public double withdraw(double withdrawSum) {
