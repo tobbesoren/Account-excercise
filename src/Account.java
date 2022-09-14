@@ -1,6 +1,5 @@
 public class Account {
-    // a double isn't the best data type to store money transactions, due to floating-point rounding errors.
-    // But I think it will be sufficient for this excercise.
+    // using int for balance to avoid float errors.
     private int balance;
     private String name;
 
