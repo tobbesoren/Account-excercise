@@ -2,8 +2,8 @@ public class Account {
     // using int for balance to avoid float errors.
     private int balance;
     private String name;
-
     private static int count = 0;
+    private final int accountNumber = count + 1000000;
 
     public Account() {
         this.balance = 0;
@@ -43,7 +43,7 @@ public class Account {
     }
 
     public String toString() {
-        return "Count: " + count + "\t\t" + "Account holder: " + name + "\t\t" +
+        return "Account number: " + accountNumber + "\t\t" + "Account holder: " + name + "\t\t" +
                 "Savings: " + (double)balance/100 + " kr";
     }
 }

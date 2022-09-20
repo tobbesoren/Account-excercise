@@ -20,6 +20,13 @@ public class SavingAccount extends Account{
         this.interestRate = interestRate;
     }
 
+    public void transfer (double sum, Account transferTo) {
+        if(sum <= this.getBalance()) {
+            this.withdraw(sum);
+            transferTo.deposit(sum);
+        }
+    }
+
     @Override
     public String toString() {
         return super.toString() + "\t\tInterest rate: " + getInterestRate() * 100 + " %";

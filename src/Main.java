@@ -16,7 +16,19 @@ public class Main {
         s1.setName("Tobias Sörensson");
         s1.deposit(1000);
         s1.addInterest(92);
+
+
+        SavingAccount s2 = new SavingAccount(0.01);
+        s2.setName("Zara Ekström");
+        s2.deposit(2000);
+
         System.out.println(s1);
+        System.out.println(s2);
+
+        s1.transfer(120, s2);
+
+        System.out.println(s1);
+        System.out.println(s2);
 
     }
 }
